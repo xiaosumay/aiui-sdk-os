@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical">
+
+    <Text
+        ohos:top_margin="10vp"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:background_element="$graphic:background_ability_main"
+        ohos:layout_alignment="horizontal_center"
+        ohos:text="$string:aiui_harmony_demo"
+        ohos:text_size="30vp"/>
+
+    <TextField
+        ohos:id="$+id:tf_result"
+        ohos:hint="this is result"
+        ohos:text_size="20vp"
+        ohos:text_alignment="left|top"
+        ohos:background_element="$graphic:background_text_field"
+        ohos:multiple_lines="true"
+        ohos:scrollable="true"
+        ohos:weight="1"
+        ohos:height="0vp"
+        ohos:margin="10vp"
+        ohos:padding="10vp"
+        ohos:width="match_parent"/>
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="vertical">
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:btn_create"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="CreateAgent"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+            <Button
+                ohos:id="$+id:btn_destroy"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="Destroy"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:btn_write"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="WriteAudio"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+            <Button
+                ohos:id="$+id:btn_stop_write"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="StopWrite"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+        </DirectionalLayout>
+
+        <DirectionalLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:orientation="horizontal">
+
+            <Button
+                ohos:id="$+id:btn_text"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="writeText"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+            <Button
+                ohos:id="$+id:btn_clear"
+                ohos:background_element="$graphic:selector_button"
+                ohos:margin="10vp"
+                ohos:padding="8vp"
+                ohos:height="match_content"
+                ohos:width="0vp"
+                ohos:weight="1"
+                ohos:text="Clear"
+                ohos:text_size="20vp"
+                ohos:visibility="visible"/>
+
+        </DirectionalLayout>
+
+    </DirectionalLayout>
+
+</DirectionalLayout>

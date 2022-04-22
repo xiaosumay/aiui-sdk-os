@@ -1,0 +1,67 @@
+{
+    "app": {
+        "bundleName": "com.iflytek.aiui.harmonydemo",
+        "vendor": "iflytek",
+        "version": {
+            "code": 1000000,
+            "name": "1.0.0"
+        }
+    },
+    "deviceConfig": {},
+    "module": {
+        "package": "com.iflytek.aiui.harmonydemo",
+        "name": ".MyApplication",
+        "mainAbility": "com.iflytek.aiui.harmonydemo.MainAbility",
+        "deviceType": [
+            "phone"
+        ],
+        "distro": {
+            "deliveryWithInstall": true,
+            "moduleName": "entry",
+            "moduleType": "entry",
+            "installationFree": false
+        },
+        "abilities": [
+            {
+                "skills": [
+                    {
+                        "entities": [
+                            "entity.system.home"
+                        ],
+                        "actions": [
+                            "action.system.home"
+                        ]
+                    }
+                ],
+                "orientation": "unspecified",
+                "visible": true,
+                "name": "com.iflytek.aiui.harmonydemo.MainAbility",
+                "icon": "$media:icon",
+                "description": "$string:mainability_description",
+                "label": "$string:aiui_demo",
+                "type": "page",
+                "launchType": "standard"
+            }
+        ],
+        "reqPermissions": [
+            {
+                "name": "ohos.permission.INTERNET",
+                "reason": "AIUI needs network",
+                "usedScene":
+                {
+                    "ability": ["com.iflytek.aiui.harmonydemo.MainAbility"],
+                    "when": "always"
+                }
+            },
+            {
+                "name": "ohos.permission.GET_NETWORK_INFO",
+                "reason": "AIUI needs network info",
+                "usedScene":
+                {
+                    "ability": ["com.iflytek.aiui.harmonydemo.MainAbility"],
+                    "when": "always"
+                }
+            }
+        ]
+    }
+}
